@@ -1,0 +1,12 @@
+## This function gets the five largest numbers in a list and sets it as elements to another list named priorities.
+
+
+def get_priorities(lst):
+	count = 0
+	priorities = list()
+	while count < 5:
+		index = lst.index(max(lst))
+		priorities.append(lst[index])
+		lst.pop(index)
+		count += 1
+	return(priorities)
